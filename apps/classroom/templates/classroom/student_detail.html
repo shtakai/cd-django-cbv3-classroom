@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Detail</title>
+</head>
+<body>
+  <h2>Student Detail id:{{ object.id }}</h2>
+  <ul>
+    <li>Name: {{ object.name }}</li>
+    <li>Created_at: {{ object.created_at }}</li>
+    <li>Teacher: {{ object.teacher.name }}</li>
+    <li>Teacher's Subject: {{ object.teacher.subject.name }}</li>
+  </ul>
+</body>
+</html>

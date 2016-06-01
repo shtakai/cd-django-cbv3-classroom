@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subject List: Template</title>
+</head>
+<body>
+ <h2>Subject List: Template</h2>
+ <ol>
+ {% for subject in subjects %}
+ <li><a href="/subject/{{ subject.id }}">{{ subject.name }}</a></li>
+ {% endfor %}
+ </ol>
+</body>
+</html>
